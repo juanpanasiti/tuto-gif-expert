@@ -12,7 +12,6 @@ export const AddCategory = ({ setCategories }) => {
     e.preventDefault();
     setCategories((categories) => {
       if (!categories.includes(inputValue) && inputValue.trim()) {
-        console.log('Elemento agregado');
         setInputValue('');
         return [inputValue,...categories];
       } else {
